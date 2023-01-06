@@ -28,7 +28,7 @@ class Vocab():
         word_freq = {}
         for data in trains:
             for utt in data:
-                text = utt['manual_transcript']
+                text = utt['manual_transcript'] # 通过manual_transcript统计词频
                 for char in text:
                     word_freq[char] = word_freq.get(char, 0) + 1
         for word in word_freq:
@@ -44,7 +44,7 @@ class Vocab():
         return len(self.word2id)
 
     def __getitem__(self, key):
-        return self.word2id.get(key, self.word2id[UNK])
+        return self.word2id.get(key, self.word2id[UNK]) # 如果key不存在，返回UNK的id
 
 
 class LabelVocab():
@@ -67,7 +67,7 @@ class LabelVocab():
             for slot in slots:
                 for bi in ['B', 'I']:
                     idx = len(self.tag2idx)
-                    tag = f'{bi}-{act}-{slot}'
+                    tag = f'{bi}-{act}-{slot}'  # 遍历所有可能的BI，act，slot标签
                     self.tag2idx[tag], self.idx2tag[idx] = idx, tag
 
     def convert_tag_to_idx(self, tag):

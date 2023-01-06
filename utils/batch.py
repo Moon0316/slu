@@ -11,7 +11,7 @@ def from_example_list(args, ex_list, device='cpu', train=True):
     batch.utt = [ex.utt for ex in ex_list]
     input_lens = [len(ex.input_idx) for ex in ex_list]
     max_len = max(input_lens)
-    input_ids = [ex.input_idx + [pad_idx] * (max_len - len(ex.input_idx)) for ex in ex_list]
+    input_ids = [ex.input_idx + [pad_idx] * (max_len - len(ex.input_idx)) for ex in ex_list]    # 把每个句子的wordid用0补成batch中最长句子的长度
     batch.input_ids = torch.tensor(input_ids, dtype=torch.long, device=device)
     batch.lengths = input_lens
     batch.did = [ex.did for ex in ex_list]
@@ -20,8 +20,8 @@ def from_example_list(args, ex_list, device='cpu', train=True):
         batch.labels = [ex.slotvalue for ex in ex_list]
         tag_lens = [len(ex.tag_id) for ex in ex_list]
         max_tag_lens = max(tag_lens)
-        tag_ids = [ex.tag_id + [tag_pad_idx] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list]
-        tag_mask = [[1] * len(ex.tag_id) + [0] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list]
+        tag_ids = [ex.tag_id + [tag_pad_idx] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list]   # 把每个句子的tagid用0补成batch中最长句子的长度
+        tag_mask = [[1] * len(ex.tag_id) + [0] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list] # 设置mask，在模型前向传播的时候为0的位置不参与计算
         batch.tag_ids = torch.tensor(tag_ids, dtype=torch.long, device=device)
         batch.tag_mask = torch.tensor(tag_mask, dtype=torch.float, device=device)
     else:

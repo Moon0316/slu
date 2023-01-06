@@ -29,9 +29,9 @@ dev_dataset = Example.load_dataset(dev_path)
 print("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 print("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(dev_dataset)))
 
-args.vocab_size = Example.word_vocab.vocab_size
+args.vocab_size = Example.word_vocab.vocab_size # 词表大小
 args.pad_idx = Example.word_vocab[PAD]
-args.num_tags = Example.label_vocab.num_tags
+args.num_tags = Example.label_vocab.num_tags    # tag总数
 args.tag_pad_idx = Example.label_vocab.convert_tag_to_idx(PAD)
 
 
@@ -69,7 +69,7 @@ def decode(choice):
             labels.extend(label)
             total_loss += loss
             count += 1
-        metrics = Example.evaluator.acc(predictions, labels)
+        metrics = Example.evaluator.acc(predictions, labels)    # 输入evaluator的predictions的格式和train.json中semantic的格式一致，不再是BIO标签了
     torch.cuda.empty_cache()
     gc.collect()
     return metrics, total_loss / count

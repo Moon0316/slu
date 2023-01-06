@@ -15,12 +15,12 @@ class Word2vecUtils():
         """ Initialize the embedding with glove and char embedding
         """
         emb_size = module.weight.data.size(-1)
-        outliers = 0
+        outliers = 0    # baseline没用上
         for word in vocab.word2id:
             if word == PAD: # PAD symbol is always 0-vector
                 module.weight.data[vocab[PAD]] = torch.zeros(emb_size, dtype=torch.float, device=device)
                 continue
-            word_emb = self.word2vec.get(word, self.word2vec[UNK])
+            word_emb = self.word2vec.get(word, self.word2vec[UNK])  # 如果key不存在，返回UNK的id
             module.weight.data[vocab[word]] = torch.tensor(word_emb, dtype=torch.float, device=device)
         return 1 - outliers / float(len(vocab))
 
