@@ -23,8 +23,11 @@
 + `utils/batch.py`:将数据以批为单位转化为输入
 + `model/slu_baseline_tagging.py`:baseline模型
 + `scripts/slu_baseline.py`:主程序脚本
++ `asrcor.py`:针对 train.json, 对语音识别结果于以修正
 
 ### 有关预训练语言模型
+已使用的预训练模型：
++ pycorrector: https://github.com/shibing624/pycorrector
 
 本次代码中没有加入有关预训练语言模型的代码，如需使用预训练语言模型我们推荐使用下面几个预训练模型，若使用预训练语言模型，不要使用large级别的模型
 + Bert: https://huggingface.co/bert-base-chinese
