@@ -11,7 +11,7 @@ with open(train_path, 'r', encoding='utf-8') as f:
 for diag in data:
     for dict in diag:
         sentence = dict['asr_1best']
-        corrected_sent, detail = pycorrector.correct('少先队员因该为老人让坐')
+        corrected_sent, detail = pycorrector.correct(sentence)
         dict['asr_1best'] = corrected_sent
 
 train_asrcor_path = os.path.join(args.dataroot, 'train_asrcor.json')
