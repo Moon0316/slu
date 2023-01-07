@@ -12,8 +12,8 @@ for diag in data:
     for dict in diag:
         sentence = dict['asr_1best']
         corrected_sent, detail = pycorrector.correct(sentence)
-        dict['asr_1best'] = corrected_sent
+        dict['asr_correct'] = corrected_sent
 
 train_asrcor_path = os.path.join(args.dataroot, 'train_asrcor.json')
 with open(train_asrcor_path, 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False)
+    json.dump(data, f, ensure_ascii=False,indent=4)
