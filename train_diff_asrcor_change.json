@@ -1,0 +1,1592 @@
+[
+    {
+        "manual": "纪念馆",
+        "asr": "静岭",
+        "asr_correct": "精灵"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "店切得的皇帝",
+        "asr_correct": "电窃得的皇帝"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "南县文源社区菁中学",
+        "asr_correct": "南县文源社区经中学"
+    },
+    {
+        "manual": "你好捷渡",
+        "asr": "你好捷渡好",
+        "asr_correct": "你好解读好"
+    },
+    {
+        "manual": "导航到南南线医院",
+        "asr": "导航到楠楠线医院",
+        "asr_correct": "导航到楠楠县医院"
+    },
+    {
+        "manual": "重新给我导航导到呃",
+        "asr": "重新给我导航导到饿",
+        "asr_correct": "重新给我导航导致俄"
+    },
+    {
+        "manual": "请给我导航导到呃北龙口",
+        "asr": "请给我导航导到北龙口",
+        "asr_correct": "请给我导航导致北龙口"
+    },
+    {
+        "manual": "(unknown)双河镇",
+        "asr": "阴县双河镇",
+        "asr_correct": "因县双河镇"
+    },
+    {
+        "manual": "请你导航给我导的平阴平阴新一中少走高速",
+        "asr": "请你导航我倒的平阴平阴新一中说走高速",
+        "asr_correct": "请你导航我倒的平阴平因新一种率走高速"
+    },
+    {
+        "manual": "航到济南中虹市场",
+        "asr": "到济南中虹市场",
+        "asr_correct": "到济南钟红市场"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "我要订购站",
+        "asr_correct": "我要订购展"
+    },
+    {
+        "manual": "导航到民意四路",
+        "asr": "导航到明义士路",
+        "asr_correct": "导航道名义士路"
+    },
+    {
+        "manual": "小奇",
+        "asr": "小齐",
+        "asr_correct": "小启"
+    },
+    {
+        "manual": "导航(unknown)",
+        "asr": "导航附近哪错",
+        "asr_correct": "导航附近拿错"
+    },
+    {
+        "manual": "我导航到呈贡区七店村",
+        "asr": "拨导航到呈贡区七店村",
+        "asr_correct": "拨导航到呈贡区七点村"
+    },
+    {
+        "manual": "我要去舜奥华府",
+        "asr": "我要去舜奥华",
+        "asr_correct": "我要去舜澳华"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "请巫路",
+        "asr_correct": "请勿洛"
+    },
+    {
+        "manual": "(unknown)导航到去医去医院",
+        "asr": "导航到曲去医院",
+        "asr_correct": "导航到区区医院"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "就几世纪轩",
+        "asr_correct": "就即使纪轩"
+    },
+    {
+        "manual": "安能物流园物流公司",
+        "asr": "安安你好武刘源沐流公司",
+        "asr_correct": "安安你好武刘源村六公司"
+    },
+    {
+        "manual": "我要去武强县东庄",
+        "asr": "我要去武强下冻庄",
+        "asr_correct": "我要去武强下东庄"
+    },
+    {
+        "manual": "帮我导航一下亿阳汇众四s店",
+        "asr": "帮我导航一下亿阳汇众四S店",
+        "asr_correct": "帮我导航一下一样汇众四S店"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "放明",
+        "asr_correct": "方明"
+    },
+    {
+        "manual": "(unknown)福州市福清",
+        "asr": "你好问问都智不清",
+        "asr_correct": "你好问问斗智不清"
+    },
+    {
+        "manual": "小爱你好帮我导一下长丰县浦里村",
+        "asr": "嗨你好帮我导一下长丰县库里镇",
+        "asr_correct": "嗨你好帮我倒一下长丰县库里镇"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "妈中山口港",
+        "asr_correct": "马中山口港"
+    },
+    {
+        "manual": "嗯你好远界",
+        "asr": "你好远界",
+        "asr_correct": "你好完结"
+    },
+    {
+        "manual": "重庆洋人街",
+        "asr": "长今洋人街",
+        "asr_correct": "张令洋人街"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "你有何兴",
+        "asr_correct": "你有何醒"
+    },
+    {
+        "manual": "去柘林镇海上家园",
+        "asr": "去柘林镇海丰家园",
+        "asr_correct": "区柘林镇海丰家园"
+    },
+    {
+        "manual": "阳城八甲口阳城八甲口(side)(dialect)",
+        "asr": "阳城八甲口一三八街口",
+        "asr_correct": "阳城八家口一三八街口"
+    },
+    {
+        "manual": "阳城县八甲口(side)(unknown)阳城县(unknown)",
+        "asr": "阳城县八甲口路阳城县",
+        "asr_correct": "阳城县八甲口洛阳城县"
+    },
+    {
+        "manual": "(side)你慢点啊走了",
+        "asr": "找个",
+        "asr_correct": "赵戈"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "我音西天气的冬之都的温度",
+        "asr_correct": "我银行天气的冬之都的温度"
+    },
+    {
+        "manual": "(side)这么多人多喝几杯好吗",
+        "asr": "去北",
+        "asr_correct": "区北"
+    },
+    {
+        "manual": "(side)马上到了到了，(unknown)中心中心小学",
+        "asr": "导航到了下午场到了洲心中心小学",
+        "asr_correct": "导航到了下午场到了轴心中心小学"
+    },
+    {
+        "manual": "(side)(unknown)价钱不是贵一半吗一样因为这样他是捆绑的那个更高端(unknown)拆了就人你买手机是一样的也有一千多的也有四千多的(unknown)",
+        "asr": "回拨地游弋前度的悠是钱",
+        "asr_correct": "回拨地游弋迁都的又是钱"
+    },
+    {
+        "manual": "(unknown)加油站",
+        "asr": "请口加油站",
+        "asr_correct": "清口加油站"
+    },
+    {
+        "manual": "来一首绅士",
+        "asr": "来一首神事",
+        "asr_correct": "来一首深市"
+    },
+    {
+        "manual": "汉汉江路",
+        "asr": "去凝路",
+        "asr_correct": "去宁路"
+    },
+    {
+        "manual": "去富宁县那能乡",
+        "asr": "去富宁县拉仁乡",
+        "asr_correct": "去富宁县拉仁香"
+    },
+    {
+        "manual": "我要导航去(unknown)小学",
+        "asr": "我要导航去巧什",
+        "asr_correct": "我要导航去乔石"
+    },
+    {
+        "manual": "(unknown)小学",
+        "asr": "孙旅游小",
+        "asr_correct": "损旅游小"
+    },
+    {
+        "manual": "导航中坡国家森园",
+        "asr": "导航中坡国家孙园",
+        "asr_correct": "导航终被国家孙园"
+    },
+    {
+        "manual": "到楚瑜宾馆",
+        "asr": "到楚林宾馆",
+        "asr_correct": "到处林宾馆"
+    },
+    {
+        "manual": "桐柏路五龙口南路",
+        "asr": "更白路五龙口南路",
+        "asr_correct": "更怕路五龙口南路"
+    },
+    {
+        "manual": "导航到河贺杨村",
+        "asr": "导航到和可杨村",
+        "asr_correct": "导航到和可杨林"
+    },
+    {
+        "manual": "(unknown)县舟曲中学",
+        "asr": "邓线舟曲中学",
+        "asr_correct": "邓贤舟曲中学"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "随州温凭什么减",
+        "asr_correct": "随州问凭什么减"
+    },
+    {
+        "manual": "你好捷渡",
+        "asr": "你好街东",
+        "asr_correct": "你好解冻"
+    },
+    {
+        "manual": "(side)好嘞好嘞",
+        "asr": "好丽华的",
+        "asr_correct": "好李华的"
+    },
+    {
+        "manual": "郑上路郑上路",
+        "asr": "郑上路郑沙路",
+        "asr_correct": "郑上路郑杀戮"
+    },
+    {
+        "manual": "我要去(unknown)收费站",
+        "asr": "我要去德意坞收费站",
+        "asr_correct": "我要去德意无收费站"
+    },
+    {
+        "manual": "导航到牛驼镇尚各庄村",
+        "asr": "导航到牛驼镇尚格庄村",
+        "asr_correct": "导航到牛驼镇上各庄村"
+    },
+    {
+        "manual": "嗯导航去常熟镇常熟市辛庄镇",
+        "asr": "导航去常熟镇常熟市辛庄镇",
+        "asr_correct": "导航去常熟镇常熟市辛装帧"
+    },
+    {
+        "manual": "(side)(unknown)我现在开到(unknown)看我发的位置我发开的慢一点行不行",
+        "asr": "现在看到你给我发个位置了吧放得开的那个",
+        "asr_correct": "现在看到你给我发个位置了吧旋律开的那个"
+    },
+    {
+        "manual": "哦到华溪客运站是不是",
+        "asr": "我到华溪客运站",
+        "asr_correct": "我到华西客运站"
+    },
+    {
+        "manual": "(side)人行天桥过来这边还没",
+        "asr": "人行天桥不",
+        "asr_correct": "人平添桥不"
+    },
+    {
+        "manual": "闭导航(side)真不靠谱",
+        "asr": "碧导航浦口",
+        "asr_correct": "比导航浦口"
+    },
+    {
+        "manual": "去东平安大队东平安村",
+        "asr": "去东平安大队东北安村",
+        "asr_correct": "区东平安大队东北安村"
+    },
+    {
+        "manual": "帮我导航花舞人间",
+        "asr": "帮我导航花舞人街",
+        "asr_correct": "帮我导航花舞人杰"
+    },
+    {
+        "manual": "要到台格庙小政府",
+        "asr": "到台格庙小政府",
+        "asr_correct": "到台阁庙小政府"
+    },
+    {
+        "manual": "迁西县金波乡金坡",
+        "asr": "迁西县金波乡金波",
+        "asr_correct": "迁徙县金波乡金波"
+    },
+    {
+        "manual": "(side)自己在家泡买原料",
+        "asr": "美联六",
+        "asr_correct": "美连六"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "到徐庄小时的外形",
+        "asr_correct": "到许庄小时的外形"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "咳咳",
+        "asr_correct": "卡卡"
+    },
+    {
+        "manual": "要附近修车的地儿",
+        "asr": "附近修车的店",
+        "asr_correct": "附近修车的电"
+    },
+    {
+        "manual": "墨迹你真墨迹你给我找",
+        "asr": "我的声音莫吉我找",
+        "asr_correct": "我的声音没给我找"
+    },
+    {
+        "manual": "小安请导航到(unknown)",
+        "asr": "小安请导航到高源龙",
+        "asr_correct": "小安庆导航到高原龙"
+    },
+    {
+        "manual": "啊(unknown)",
+        "asr": "埃乐从国税",
+        "asr_correct": "爱乐从国税"
+    },
+    {
+        "manual": "临川区抚北工业区园区东",
+        "asr": "临川区抚北工业区园去东",
+        "asr_correct": "临川区抚北工业区园区东"
+    },
+    {
+        "manual": "导航到滨海县玉龙路",
+        "asr": "导航到滨海县玉良",
+        "asr_correct": "导航到滨海县雨量"
+    },
+    {
+        "manual": "带我去(unknown)印象城",
+        "asr": "带我去都追栗小城",
+        "asr_correct": "带我去都追利小城"
+    },
+    {
+        "manual": "你好我要去赵场镇政府",
+        "asr": "你好我想去赵场镇政府",
+        "asr_correct": "你好我想去找厂镇政府"
+    },
+    {
+        "manual": "(robot)我买二十块钱一个十年没涨过价(unknown)",
+        "asr": "十年没涨我价",
+        "asr_correct": "十年没涨我家"
+    },
+    {
+        "manual": "(robot)(unknown)几十里镇上几十家酒厂的外地客商也是闻名闻香前来寻找猪蹄儿过来",
+        "asr": "这里镇上几十家酒厂的外地客商也是官明闻香前来一十秒钟",
+        "asr_correct": "这里镇上即使家酒厂的外地客商也是官明闻香青睐一十秒钟"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "即便",
+        "asr_correct": "即使"
+    },
+    {
+        "manual": "(side)(unknown)南泉北路到了",
+        "asr": "音量最暗观",
+        "asr_correct": "音量最暗管"
+    },
+    {
+        "manual": "临淄齐国文化城",
+        "asr": "林子琪泊文化城",
+        "asr_correct": "林子琪博文化城"
+    },
+    {
+        "manual": "(side)看两个(unknown)一个是(unknown)这个是往售后",
+        "asr": "看杨峰汽贸一日春泽大门的这个是网售后",
+        "asr_correct": "看杨峰汽贸一日春则大门的这个是网售后"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "来哥副食店",
+        "asr_correct": "莱格副食店"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "海川挂啊",
+        "asr_correct": "海船挂啊"
+    },
+    {
+        "manual": "导航到(unknown)",
+        "asr": "导航到河池浜",
+        "asr_correct": "导航到河池帮"
+    },
+    {
+        "manual": "导航去阳新县王英镇",
+        "asr": "导航去洋县广阳镇",
+        "asr_correct": "导航区洋县广阳镇"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "调低鹏泉的",
+        "asr_correct": "调低碰拳的"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "那的怎么八弄啊我要地震啊",
+        "asr_correct": "那的怎么把弄啊我要地震啊"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "你好小必因为媚的第二",
+        "asr_correct": "你好小笔因为媚的第二"
+    },
+    {
+        "manual": "义堂镇堰家村",
+        "asr": "义堂镇堰家坤",
+        "asr_correct": "义堂镇严家坤"
+    },
+    {
+        "manual": "请导航到济宁四方",
+        "asr": "请导航到济宁市坊",
+        "asr_correct": "请导航到济宁市房"
+    },
+    {
+        "manual": "洗浴中心",
+        "asr": "紫玉中心",
+        "asr_correct": "自狱中心"
+    },
+    {
+        "manual": "南京汽车站第二个",
+        "asr": "南京乡歌",
+        "asr_correct": "南京降格"
+    },
+    {
+        "manual": "济源济源亚飞酒店",
+        "asr": "济源亚飞酒店",
+        "asr_correct": "济源亚非酒店"
+    },
+    {
+        "manual": "济源亚飞酒店",
+        "asr": "既然亚飞酒店",
+        "asr_correct": "既然亚非酒店"
+    },
+    {
+        "manual": "导航渝州岳阳楼小学",
+        "asr": "导航去渝州岳阳楼小学",
+        "asr_correct": "导航区渝州岳阳楼小学"
+    },
+    {
+        "manual": "大长县",
+        "asr": "到昌线",
+        "asr_correct": "到长线"
+    },
+    {
+        "manual": "(side)，确定",
+        "asr": "没零点打开地图确定",
+        "asr_correct": "美零点打开地图确定"
+    },
+    {
+        "manual": "(side)",
+        "asr": "那景辉挂",
+        "asr_correct": "那英辉挂"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "恩贾",
+        "asr_correct": "思佳"
+    },
+    {
+        "manual": "城开请帮我导航到城开景祥佳园",
+        "asr": "陈克请帮我导航到城开景祥佳园",
+        "asr_correct": "陈克请帮我导航到城开景象佳园"
+    },
+    {
+        "manual": "去羊卓雍错",
+        "asr": "去杨庄雍错",
+        "asr_correct": "去杨庄雍措"
+    },
+    {
+        "manual": "(robot)阳澄湖大闸蟹安丰专卖店从(unknown)到豪泰新村大闸蟹，我要去南湖市政府",
+        "asr": "我要去川美店从南湖市政府",
+        "asr_correct": "我要去川煤电从南湖市政府"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "公刘街我去换这个边线你们",
+        "asr_correct": "公柳接我去换这个边线你们"
+    },
+    {
+        "manual": "(side)(unknown)渭阳西路吗渭阳西路(unknown)",
+        "asr": "微信渭阳西路吗",
+        "asr_correct": "维信渭阳西路吗"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "梅湖书吧",
+        "asr_correct": "美护书吧"
+    },
+    {
+        "manual": "给我导航导到箬横镇政府",
+        "asr": "给我导航导到箬横镇镇府",
+        "asr_correct": "给我导航导致箬横镇振福"
+    },
+    {
+        "manual": "重庆市第二师范学院",
+        "asr": "重庆市第二吃饭学苑",
+        "asr_correct": "重庆市第二吃饭学员"
+    },
+    {
+        "manual": "北京农效禽业公司",
+        "asr": "北京农效企业公司",
+        "asr_correct": "北京农学企业公司"
+    },
+    {
+        "manual": "啊许昌市梨园转盘",
+        "asr": "它是吕南转盘",
+        "asr_correct": "它是绿南转盘"
+    },
+    {
+        "manual": "我要去浙江力夫",
+        "asr": "我要去浙江力虎",
+        "asr_correct": "我要去浙江离沪"
+    },
+    {
+        "manual": "去鄂城江碧路打开地图去鄂鄂城江碧路",
+        "asr": "去二层江碧路打开地图只乐盛嘉宾的",
+        "asr_correct": "去二层江碧路打开地图只要盛嘉宾的"
+    },
+    {
+        "manual": "我到尚池俊呃镇街一百零八号",
+        "asr": "到尚池俊镇街一百零八号",
+        "asr_correct": "到上池俊镇街一百零八号"
+    },
+    {
+        "manual": "我到上池正街一百零八号",
+        "asr": "我到上池镇GUY一百零八号",
+        "asr_correct": "我到上地震GUY一百零八号"
+    },
+    {
+        "manual": "我去惠济区裕华广场小区",
+        "asr": "我去惠济区玉华广成小区",
+        "asr_correct": "我去惠济区裕华广成小区"
+    },
+    {
+        "manual": "你好小来",
+        "asr": "你好小赛",
+        "asr_correct": "你好小寒"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "刘彭华府",
+        "asr_correct": "刘鹏华府"
+    },
+    {
+        "manual": "(robot)(unknown)而且呢你还在微信上主动摇人你想给我什么样的好印",
+        "asr": "请问你还在微信上主动咬人",
+        "asr_correct": "请问你还在为欣赏主动咬人"
+    },
+    {
+        "manual": "导航到最近的(unknown)粥馆",
+        "asr": "导航到最近的情粥馆",
+        "asr_correct": "导航到最近的情周馆"
+    },
+    {
+        "manual": "我导到偃师市漷县镇",
+        "asr": "我导言实是骆仙镇",
+        "asr_correct": "我导言实是骆嫌镇"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "来秀",
+        "asr_correct": "赖秀"
+    },
+    {
+        "manual": "(side)",
+        "asr": "从蓝家堡在哪里啊",
+        "asr_correct": "从蓝家暴在哪里啊"
+    },
+    {
+        "manual": "(unknown)岭线",
+        "asr": "岭线",
+        "asr_correct": "领先"
+    },
+    {
+        "manual": "冲县镇政府",
+        "asr": "从现镇政府",
+        "asr_correct": "从县镇政府"
+    },
+    {
+        "manual": "小迈我要导航去美成齿科",
+        "asr": "小麦我要导航去美成齿科",
+        "asr_correct": "小麦我要导航去没成齿科"
+    },
+    {
+        "manual": "导航到包埠村收费站",
+        "asr": "导航到保铺村收费站",
+        "asr_correct": "导航到包铺村收费站"
+    },
+    {
+        "manual": "(side)他属于那种就是也是回民吶",
+        "asr": "他属于那种就是冶氏回民呢",
+        "asr_correct": "他属于那种就是夜市回民呢"
+    },
+    {
+        "manual": "(side)(unknown)那种(unknown)和那种嗯",
+        "asr": "龙虎塘和内容饿",
+        "asr_correct": "龙虎塘和内容恶"
+    },
+    {
+        "manual": "我要去定园永康",
+        "asr": "我去定园永康",
+        "asr_correct": "我去定远永康"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "这周四州的S的银行",
+        "asr_correct": "这周四周的S的银行"
+    },
+    {
+        "manual": "(side)要关闭导航(unknown)，关闭导航",
+        "asr": "你导航加币导航",
+        "asr_correct": "你导航加比导航"
+    },
+    {
+        "manual": "去联发广",
+        "asr": "去联发",
+        "asr_correct": "去练法"
+    },
+    {
+        "manual": "千山我要去千山",
+        "asr": "千山和去千盛",
+        "asr_correct": "千山和去前程"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "连丽",
+        "asr_correct": "连理"
+    },
+    {
+        "manual": "我要到锦辉宾馆",
+        "asr": "到锦辉宾馆",
+        "asr_correct": "到今回宾馆"
+    },
+    {
+        "manual": "凌途导我帮我导到导航三工",
+        "asr": "给我导航到到导航三工",
+        "asr_correct": "给我导航到到导航三红"
+    },
+    {
+        "manual": "我要去七泰糖厂(side)",
+        "asr": "我要去七泰糖厂替",
+        "asr_correct": "我要去七台糖厂替"
+    },
+    {
+        "manual": "导航到北京路",
+        "asr": "导航到北京咯",
+        "asr_correct": "导航到北京各"
+    },
+    {
+        "manual": "从这边(unknown)到(unknown)还有多少路啊",
+        "asr": "点道",
+        "asr_correct": "颠倒"
+    },
+    {
+        "manual": "去黄泽乡",
+        "asr": "去荒泽乡",
+        "asr_correct": "去荒驿乡"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "模式节乡",
+        "asr_correct": "模式街巷"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "联系点",
+        "asr_correct": "迁徙点"
+    },
+    {
+        "manual": "给我导航到新晃",
+        "asr": "给我导航到心慌",
+        "asr_correct": "给我导航到欣赏"
+    },
+    {
+        "manual": "去(unknown)",
+        "asr": "去弥巨离聚源",
+        "asr_correct": "去称巨离聚源"
+    },
+    {
+        "manual": "导航宁连高宁连公路",
+        "asr": "导航林怜宁连公路",
+        "asr_correct": "导航林连宁连公路"
+    },
+    {
+        "manual": "航去青羊区金隆酒店",
+        "asr": "导航去青羊区金隆酒店",
+        "asr_correct": "导航去青羊区金龙酒店"
+    },
+    {
+        "manual": "打开导航去呃珲乌高速白城",
+        "asr": "打开导航去途高速白城",
+        "asr_correct": "打开导航区除高速白城"
+    },
+    {
+        "manual": "到盱眙去",
+        "asr": "歌曲一去",
+        "asr_correct": "歌曲一曲"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "帮麦",
+        "asr_correct": "帮买"
+    },
+    {
+        "manual": "万新",
+        "asr": "本兮",
+        "asr_correct": "本溪"
+    },
+    {
+        "manual": "到成都运通博爱有限公司",
+        "asr": "成都云通博爱有限公司",
+        "asr_correct": "成都运用博爱有限公司"
+    },
+    {
+        "manual": "去信宜市池洞镇文定管理区荔枝坡队",
+        "asr": "去信宜市池洞镇文定管理区荔枝坡对",
+        "asr_correct": "去信宜市池洞镇文定管理区荔枝被对"
+    },
+    {
+        "manual": "叮咚",
+        "asr": "燕东",
+        "asr_correct": "严冬"
+    },
+    {
+        "manual": "导航麓景花园小区",
+        "asr": "导航穆景花园小区",
+        "asr_correct": "导航模景花园小区"
+    },
+    {
+        "manual": "我要去湖南新晃新晃县",
+        "asr": "我要去湖南新放新晃县",
+        "asr_correct": "我要去湖南寻访欣赏县"
+    },
+    {
+        "manual": "我要到七顶山镇大后海村",
+        "asr": "我要到七零山镇大后海村",
+        "asr_correct": "我要到溪岭山镇大后海村"
+    },
+    {
+        "manual": "我我要去芜湖县临湖丽城公交站",
+        "asr": "我要我要吃芜湖县临湖丽城公交站",
+        "asr_correct": "我要我要吃芜湖县临湖历城公交站"
+    },
+    {
+        "manual": "导航去桃浦路幺零二三弄",
+        "asr": "导航去桃浦路一零二三路",
+        "asr_correct": "导航区桃浦路一零二三路"
+    },
+    {
+        "manual": "小明",
+        "asr": "小敏",
+        "asr_correct": "肖敏"
+    },
+    {
+        "manual": "(side)(dialect)，关闭导航(side)",
+        "asr": "导航关闭导航八张",
+        "asr_correct": "导航关闭导航八掌"
+    },
+    {
+        "manual": "(unknown)福海县的乌伦古湖",
+        "asr": "拨通福海县到乌龙贾湖",
+        "asr_correct": "拨通福海县到乌龙嘉许"
+    },
+    {
+        "manual": "市疾控中心",
+        "asr": "疾控",
+        "asr_correct": "祭孔"
+    },
+    {
+        "manual": "我在家(unknown)小笨",
+        "asr": "我想乐",
+        "asr_correct": "我享乐"
+    },
+    {
+        "manual": "(side)",
+        "asr": "帮我家两挂",
+        "asr_correct": "帮我家梁桂"
+    },
+    {
+        "manual": "导航到彭七南街建设银行",
+        "asr": "导航到彭七南芥建设银行",
+        "asr_correct": "导航到彭溪南芥建设银行"
+    },
+    {
+        "manual": "到柳庄",
+        "asr": "柳庄",
+        "asr_correct": "刘庄"
+    },
+    {
+        "manual": "导航去哦贺州市(unknown)",
+        "asr": "导航去哦贺州市治村",
+        "asr_correct": "导航去哦贺州市之时"
+    },
+    {
+        "manual": "我要去雁滩交警队",
+        "asr": "我要去雁滩交警段",
+        "asr_correct": "我要去雁滩交痉挛"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "海吉",
+        "asr_correct": "海基"
+    },
+    {
+        "manual": "(side)快了五过完年五五月份",
+        "asr": "快乐屋关年会委员会",
+        "asr_correct": "快乐无关年会委员会"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "我生",
+        "asr_correct": "我省"
+    },
+    {
+        "manual": "我要去黄河子",
+        "asr": "我要去黄河梓",
+        "asr_correct": "我要去黄河自"
+    },
+    {
+        "manual": "(side)",
+        "asr": "这个供养都开始供氧",
+        "asr_correct": "这个供养都开始供养"
+    },
+    {
+        "manual": "我要去西南光村",
+        "asr": "我要去西南广村",
+        "asr_correct": "我要去西南光林"
+    },
+    {
+        "manual": "这个停车场远了近的地方有停车场吗",
+        "asr": "这个停车场园乐进的地方有停车场吗",
+        "asr_correct": "这个停车场玩乐进的地方有停车场吗"
+    },
+    {
+        "manual": "我到清那个银川市清和北街",
+        "asr": "我到期惠山银川市清和北街",
+        "asr_correct": "我到其惠山银川市清和北街"
+    },
+    {
+        "manual": "(side)",
+        "asr": "来首乡",
+        "asr_correct": "来首降"
+    },
+    {
+        "manual": "导航去花佰港",
+        "asr": "导航去花佰吗",
+        "asr_correct": "导航去花白吗"
+    },
+    {
+        "manual": "导航到行知学校",
+        "asr": "导航到星之悬想",
+        "asr_correct": "导航道行之悬想"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "到金玛到金源",
+        "asr_correct": "到金马到金源"
+    },
+    {
+        "manual": "航到名辉豪庭",
+        "asr": "到名辉豪庭",
+        "asr_correct": "到名车豪庭"
+    },
+    {
+        "manual": "导航去昆明市圣圣约翰医院",
+        "asr": "导航去昆明市盛圣约翰医院",
+        "asr_correct": "导航去昆明市省圣约翰医院"
+    },
+    {
+        "manual": "(unknown)汽车西站",
+        "asr": "来盛汽车西站",
+        "asr_correct": "来乘汽车西站"
+    },
+    {
+        "manual": "我要去翠香花园(robot)前方一百米有闯红灯拍照限速七十公里",
+        "asr": "请帮我要去翠香花园",
+        "asr_correct": "请帮我要去翱翔花园"
+    },
+    {
+        "manual": "中通快递",
+        "asr": "周通快递",
+        "asr_correct": "调用快递"
+    },
+    {
+        "manual": "(side)(unknown)，导航到黄山景区",
+        "asr": "去学了导航到黄山景区",
+        "asr_correct": "取消了导航到黄山景区"
+    },
+    {
+        "manual": "(side)(unknown)就现在(unknown)来回转(unknown)在一号线不好转得绕到(unknown)三号线(unknown)",
+        "asr": "广元市难过就现在可以说个啥呀",
+        "asr_correct": "广元市难过九霄在可以说个啥呀"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "这个过路可能展览馆二室",
+        "asr_correct": "这个过路可能展览馆二十"
+    },
+    {
+        "manual": "请导航到玉林火车站",
+        "asr": "请导航到翼城站",
+        "asr_correct": "请导航到宜城站"
+    },
+    {
+        "manual": "要去北京绿佳福源山庄",
+        "asr": "去北京瑞佳汇原山庄",
+        "asr_correct": "去北京瑞嘉汇源山庄"
+    },
+    {
+        "manual": "导航你好导航光坡",
+        "asr": "导航你好含光坡",
+        "asr_correct": "导航你好汉光坡"
+    },
+    {
+        "manual": "要去我要去广州(unknown)",
+        "asr": "我要去广州车坊霜色城",
+        "asr_correct": "我要去广州车坊双色城"
+    },
+    {
+        "manual": "闭导航(robot)前方在红绿灯路口左转进入沣源路",
+        "asr": "导航红绿灯路口左转进入沣源路",
+        "asr_correct": "导航红绿灯路口左转进入逢源路"
+    },
+    {
+        "manual": "我要去开封市尉氏县洧川镇(unknown)村二组何腾飞他家",
+        "asr": "我要去开封市尉氏县洧川镇英耐酸二手车城北场乡",
+        "asr_correct": "我要去开封市尉氏县洧川镇英耐酸二手车城北唱响"
+    },
+    {
+        "manual": "要去第一个",
+        "asr": "去第一个",
+        "asr_correct": "区第一个"
+    },
+    {
+        "manual": "去盐亭县(unknown)",
+        "asr": "去盐亭县美盛王场",
+        "asr_correct": "去盐亭县美称班长"
+    },
+    {
+        "manual": "帮我导到工业园区",
+        "asr": "帮我导到中原区",
+        "asr_correct": "帮我倒到中原区"
+    },
+    {
+        "manual": "我要去会宁(unknown)",
+        "asr": "我要去怀宁路厂",
+        "asr_correct": "我要去怀宁路长"
+    },
+    {
+        "manual": "我要回韩去韩店镇大王驼",
+        "asr": "我要回哈去邯郸的大王坨",
+        "asr_correct": "我要回答去邯郸的大王坨"
+    },
+    {
+        "manual": "常熟妇幼保健院",
+        "asr": "唱首妇幼保健院",
+        "asr_correct": "长寿妇幼保健院"
+    },
+    {
+        "manual": "你好玲玲请到昆明市兰雁静园小区",
+        "asr": "请到昆明市兰雁静园小区",
+        "asr_correct": "请到昆明市蓝焰痉挛小区"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "我燃二",
+        "asr_correct": "我然而"
+    },
+    {
+        "manual": "到进京证办理处",
+        "asr": "到晋江证办理处",
+        "asr_correct": "到晋江正办理处"
+    },
+    {
+        "manual": "第一个(unknown)",
+        "asr": "听幢",
+        "asr_correct": "听童"
+    },
+    {
+        "manual": "我要去(unknown)高速路口",
+        "asr": "我要去茗汤高速路口",
+        "asr_correct": "我要去明上高速路口"
+    },
+    {
+        "manual": "去毛坪尖",
+        "asr": "去毛平街",
+        "asr_correct": "去毛坪街"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "帮我估了",
+        "asr_correct": "帮我家了"
+    },
+    {
+        "manual": "我想我姑了",
+        "asr": "我想我估了",
+        "asr_correct": "我想我鼓了"
+    },
+    {
+        "manual": "(side)你听他瞎说,你刚说什么",
+        "asr": "确定小山干说什么",
+        "asr_correct": "确定小山敢说什么"
+    },
+    {
+        "manual": "(side)我姑是个好老太太",
+        "asr": "我姑是个好老太太",
+        "asr_correct": "我家是个好老太太"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "放个",
+        "asr_correct": "放歌"
+    },
+    {
+        "manual": "到灵寿县上三汲乡河曲村",
+        "asr": "到灵寿县胜三G乡河曲村",
+        "asr_correct": "到灵寿县省三G乡河曲村"
+    },
+    {
+        "manual": "请导航到小池镇(unknown)村",
+        "asr": "请导航到小池镇最村",
+        "asr_correct": "请导航到小池镇堆存"
+    },
+    {
+        "manual": "我我不去了再见",
+        "asr": "拨拨部去了再见",
+        "asr_correct": "拨拨补去了再见"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "我说他的电话是他们包卖的是一抹",
+        "asr_correct": "我说他的电话是他们报读的是一抹"
+    },
+    {
+        "manual": "帮我导到那个地方",
+        "asr": "导到那地方",
+        "asr_correct": "导致那地方"
+    },
+    {
+        "manual": "导航兰县",
+        "asr": "导航兰线",
+        "asr_correct": "导航蓝线"
+    },
+    {
+        "manual": "(unknown)市黔西一中(robot)高德地图持续为您导航",
+        "asr": "D G是黔西一中",
+        "asr_correct": "D G是迁徙一中"
+    },
+    {
+        "manual": "(unknown)黔西一中",
+        "asr": "避忌士前溪一中",
+        "asr_correct": "避即使迁徙一中"
+    },
+    {
+        "manual": "黔西县黔西一中",
+        "asr": "请西县黔西一中",
+        "asr_correct": "迁徙县迁徙一中"
+    },
+    {
+        "manual": "(dialect)",
+        "asr": "请溪一中",
+        "asr_correct": "迁徙一中"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "连洋是",
+        "asr_correct": "联洋是"
+    },
+    {
+        "manual": "(side)",
+        "asr": "萝卜打一声挂",
+        "asr_correct": "萝卜打一声哇"
+    },
+    {
+        "manual": "我要吃金钱牛肉面",
+        "asr": "我要吃金钱牛苑",
+        "asr_correct": "我要吃金钱扭苑"
+    },
+    {
+        "manual": "你把未名园设为家",
+        "asr": "你把未名园四为家",
+        "asr_correct": "你把未名园四位家"
+    },
+    {
+        "manual": "(side)哦到医院让大夫给我处理一下哦",
+        "asr": "我到院岭站",
+        "asr_correct": "我到园岭站"
+    },
+    {
+        "manual": "去西夏八小",
+        "asr": "去西夏八侠",
+        "asr_correct": "去西夏趴下"
+    },
+    {
+        "manual": "八小",
+        "asr": "发小",
+        "asr_correct": "法学"
+    },
+    {
+        "manual": "请导到青松岭",
+        "asr": "请导到青松岭镇八",
+        "asr_correct": "青岛到青松岭镇八"
+    },
+    {
+        "manual": "导航到湖南桑",
+        "asr": "导航到湖南桑结县",
+        "asr_correct": "导航到湖南桑吉县"
+    },
+    {
+        "manual": "导航金导航到金阳绿洲湾小区",
+        "asr": "导航金虎导航到金阳绿洲湾小区",
+        "asr_correct": "导航键护导航到金阳绿洲湾小区"
+    },
+    {
+        "manual": "导航萍乡河古庙",
+        "asr": "导航萍乡市庙",
+        "asr_correct": "导航萍乡市邮"
+    },
+    {
+        "manual": "南京经天路枫情水岸",
+        "asr": "南京今天路枫情水岸",
+        "asr_correct": "南京今天路风情水岸"
+    },
+    {
+        "manual": "(unknown)路格林豪泰宾馆",
+        "asr": "凝路格林豪泰宾馆",
+        "asr_correct": "宁路格杀戮泰宾馆"
+    },
+    {
+        "manual": "(unknown)个",
+        "asr": "放个",
+        "asr_correct": "放歌"
+    },
+    {
+        "manual": "给我导航到景田南路一号交通银行",
+        "asr": "导航到景田南路一号交通银行",
+        "asr_correct": "导航到平添南路一号交通银行"
+    },
+    {
+        "manual": "江和园导航到曲江和园",
+        "asr": "导航到曲江和园",
+        "asr_correct": "导航到曲江河完"
+    },
+    {
+        "manual": "(unknown)导航到江中路跟王沙路交叉口",
+        "asr": "导航到金洲路耕南三路交叉口",
+        "asr_correct": "导航到金州路耕南三路交叉口"
+    },
+    {
+        "manual": "(side)",
+        "asr": "在炉观",
+        "asr_correct": "在房管"
+    },
+    {
+        "manual": "要去爱国小学",
+        "asr": "去爱泊小学",
+        "asr_correct": "去艾柏小学"
+    },
+    {
+        "manual": "海盐第一人民医院",
+        "asr": "我要导航蜜",
+        "asr_correct": "我要导航迷"
+    },
+    {
+        "manual": "导航去高新店(unknown)",
+        "asr": "导航去高新店站屯镇",
+        "asr_correct": "导航去高新店立屯镇"
+    },
+    {
+        "manual": "(unknown)医院",
+        "asr": "曾克医院",
+        "asr_correct": "蹭课医院"
+    },
+    {
+        "manual": "(side)(unknown)两个小时坐上去可以现在不要起来我给你说(unknown)，去米泉",
+        "asr": "动车开始减到昌吉市区两个小时接下去可以现在不要起来观",
+        "asr_correct": "动车开始减到昌即使区两个小时接下去可以现在不要起来观"
+    },
+    {
+        "manual": "我要去嵩明县(unknown)",
+        "asr": "我要去嵩明县戚薇",
+        "asr_correct": "我要去嵩明县齐威"
+    },
+    {
+        "manual": "(unknown)小学",
+        "asr": "没骨烂泥沟小学",
+        "asr_correct": "美股烂泥沟小学"
+    },
+    {
+        "manual": "阿克苏市一杆旗乡",
+        "asr": "嗨尊镜一杆旗乡",
+        "asr_correct": "海尊敬一杆旗乡"
+    },
+    {
+        "manual": "导航到赵县水榭花(unknown)",
+        "asr": "导航到赵县水榭花都",
+        "asr_correct": "导航到朝鲜水榭花都"
+    },
+    {
+        "manual": "我去绥阳啊",
+        "asr": "我去水洋啊",
+        "asr_correct": "我去说羊啊"
+    },
+    {
+        "manual": "五征汽汽配店",
+        "asr": "我真去配店",
+        "asr_correct": "我真去酒店"
+    },
+    {
+        "manual": "(side)，导航",
+        "asr": "放首导航",
+        "asr_correct": "放手导航"
+    },
+    {
+        "manual": "导航到深圳市(unknown)",
+        "asr": "导航到深圳市坪",
+        "asr_correct": "导航到深圳市平"
+    },
+    {
+        "manual": "(unknown)上海路九号",
+        "asr": "讲印去上海路九号",
+        "asr_correct": "讲听取上海路九号"
+    },
+    {
+        "manual": "嗯导航去黄寨走幺零八线",
+        "asr": "导航去黄寨一零八届",
+        "asr_correct": "导航去黄宅一零八届"
+    },
+    {
+        "manual": "航去平凯",
+        "asr": "导航去平凯",
+        "asr_correct": "导航去平开"
+    },
+    {
+        "manual": "闭导航呃走",
+        "asr": "碧导航走",
+        "asr_correct": "比导航走"
+    },
+    {
+        "manual": "导航到长光路上哪边有卖风筝店",
+        "asr": "导航到长光禄山那边有卖风筝店",
+        "asr_correct": "导航到长光禄山那边有卖风筝点"
+    },
+    {
+        "manual": "江凌科技",
+        "asr": "将凌科技",
+        "asr_correct": "强令科技"
+    },
+    {
+        "manual": "(unknown)帮我导航到平铝国际大酒店",
+        "asr": "导航帮我导航到平铝国际大酒店",
+        "asr_correct": "导航帮我导航到平率国际大酒店"
+    },
+    {
+        "manual": "你还近视",
+        "asr": "雅京",
+        "asr_correct": "崔静"
+    },
+    {
+        "manual": "(unknown)洞庭山水厂",
+        "asr": "有洞庭山水厂",
+        "asr_correct": "有洞庭蘸水厂"
+    },
+    {
+        "manual": "航到百伦广场",
+        "asr": "导航到百伦广场",
+        "asr_correct": "导航到拜伦广场"
+    },
+    {
+        "manual": "小奇我要到",
+        "asr": "小齐我要到",
+        "asr_correct": "学期我要到"
+    },
+    {
+        "manual": "我要去(unknown)中学",
+        "asr": "我要去文地东学",
+        "asr_correct": "我要去问的洞穴"
+    },
+    {
+        "manual": "(side)没事我和姐姐用这个就行",
+        "asr": "没事我和姐用这个",
+        "asr_correct": "没事我和借用这个"
+    },
+    {
+        "manual": "你好远界我要去北京还要四川还要香港",
+        "asr": "你好远界去北京航香港",
+        "asr_correct": "你好玩接去北京航香港"
+    },
+    {
+        "manual": "我要去章丘区垛庄镇十八盘村",
+        "asr": "我要去章丘区到涨镇十八盘村",
+        "asr_correct": "我要去章丘区到张震十八盘村"
+    },
+    {
+        "manual": "(side)，去章丘区垛庄镇十八盘村",
+        "asr": "我要去章丘音乐杜庄镇十八盘村",
+        "asr_correct": "我要去章丘音乐杜装帧十八盘村"
+    },
+    {
+        "manual": "海滩海滩",
+        "asr": "凯汤听",
+        "asr_correct": "几场听"
+    },
+    {
+        "manual": "去药沈路",
+        "asr": "药沈路",
+        "asr_correct": "药神路"
+    },
+    {
+        "manual": "亚明科汽车用品",
+        "asr": "杨铭科汽车用品",
+        "asr_correct": "杨明科汽车用品"
+    },
+    {
+        "manual": "们去贡溪梧州市",
+        "asr": "去贡溪梧州市",
+        "asr_correct": "去工行梧州市"
+    },
+    {
+        "manual": "菜艺街三辅街哈尔滨塑四塑胶厂",
+        "asr": "菜艺街三辅街哈尔滨数视塑胶厂",
+        "asr_correct": "猜一街三福街哈尔滨楼市塑胶厂"
+    },
+    {
+        "manual": "导航(unknown)",
+        "asr": "导航打羊",
+        "asr_correct": "导航大洋"
+    },
+    {
+        "manual": "取消导航了从二级路上田阳",
+        "asr": "取消导航了虫二级路上田阳",
+        "asr_correct": "取消导航了重二级路上田阳"
+    },
+    {
+        "manual": "我要到中三环",
+        "asr": "我要到中山还",
+        "asr_correct": "我要到中山海"
+    },
+    {
+        "manual": "(side)(unknown)绵阳成绵路成绵路在哪呢",
+        "asr": "成绵路成绵路在哪",
+        "asr_correct": "沉湎路成绵路在哪"
+    },
+    {
+        "manual": "(unknown)去广夏新城",
+        "asr": "去广夏新城",
+        "asr_correct": "去广厦新城"
+    },
+    {
+        "manual": "你好捷渡(robot)信号正常(unknown)",
+        "asr": "你好捷渡",
+        "asr_correct": "你好解读"
+    },
+    {
+        "manual": "导航小馨你好导航去(unknown)",
+        "asr": "导航小欣您好导航去特文图伟",
+        "asr_correct": "导航小心您好导航去诗文突围"
+    },
+    {
+        "manual": "导航去温特(unknown)",
+        "asr": "导航去温特竹尾",
+        "asr_correct": "导航去温等竹尾"
+    },
+    {
+        "manual": "帮我导航去皇庭",
+        "asr": "导航去皇庭",
+        "asr_correct": "导航去荒诞"
+    },
+    {
+        "manual": "(unknown)路",
+        "asr": "请全国路",
+        "asr_correct": "请全国各"
+    },
+    {
+        "manual": "(unknown)",
+        "asr": "请全国路",
+        "asr_correct": "请全国各"
+    },
+    {
+        "manual": "万山农庄",
+        "asr": "放山农庄",
+        "asr_correct": "房山农庄"
+    },
+    {
+        "manual": "导航襄县湖头里鱼塘",
+        "asr": "导航降县湖头鲤语堂",
+        "asr_correct": "导航降县湖头鲤鱼堂"
+    },
+    {
+        "manual": "我要去圣地布达拉酒店",
+        "asr": "我要去圣地布达拉",
+        "asr_correct": "我要去圣地布打蜡"
+    },
+    {
+        "manual": "菲儿雪",
+        "asr": "声音儿雪",
+        "asr_correct": "声音九霄"
+    },
+    {
+        "manual": "三四三水广场",
+        "asr": "三是三水广场",
+        "asr_correct": "三十三水广场"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "给寻个火罐",
+        "asr_correct": "给新歌火罐"
+    },
+    {
+        "manual": "到桐乡崇福镇",
+        "asr": "到桐乡重复镇",
+        "asr_correct": "到桐乡重复诊"
+    },
+    {
+        "manual": "到融广春天",
+        "asr": "到龙广春天",
+        "asr_correct": "到龙光春天"
+    },
+    {
+        "manual": "到融广春天",
+        "asr": "到龙广春天",
+        "asr_correct": "到龙光春天"
+    },
+    {
+        "manual": "我去灯明寺到灯明寺吧(unknown)",
+        "asr": "我去灯明寺到达公司吧",
+        "asr_correct": "我去等名寺到达公司吧"
+    },
+    {
+        "manual": "安徽省枞阳新世纪实验小学",
+        "asr": "帮微省中央新世纪实验小学",
+        "asr_correct": "帮为省中央新世即使验小学"
+    },
+    {
+        "manual": "去荷塘盛宴",
+        "asr": "去和唐胜面",
+        "asr_correct": "去和唐生面"
+    },
+    {
+        "manual": "荷塘盛宴",
+        "asr": "和塘盛店",
+        "asr_correct": "和塘城电"
+    },
+    {
+        "manual": "(side)你看他一来就行我们那么的不会用搞来搞去的不知道是去哪个码头(unknown)",
+        "asr": "你干潭一来就行我们能不能不会用挂",
+        "asr_correct": "你感叹一来就行我们能不能不会用挂"
+    },
+    {
+        "manual": "要去永昌县骊千城",
+        "asr": "去永昌县骊千盛",
+        "asr_correct": "去永昌县骊千升"
+    },
+    {
+        "manual": "古城骊靬古城",
+        "asr": "车丽千古城",
+        "asr_correct": "车里千古城"
+    },
+    {
+        "manual": "(side)拿好不能丢掉哦你装好装到口袋里面了嗯",
+        "asr": "那好",
+        "asr_correct": "拿好"
+    },
+    {
+        "manual": "我要去(unknown)(side)(unknown)，到无锡",
+        "asr": "我要去回龙路口头西",
+        "asr_correct": "我要去回龙路口头行"
+    },
+    {
+        "manual": "导航到繁昌县(unknown)",
+        "asr": "导航到繁昌县古词四",
+        "asr_correct": "导航到繁昌县古瓷四"
+    },
+    {
+        "manual": "税务局",
+        "asr": "去务局",
+        "asr_correct": "去五局"
+    },
+    {
+        "manual": "于记",
+        "asr": "于志",
+        "asr_correct": "物质"
+    },
+    {
+        "manual": "到灵武市龙城华庭南门",
+        "asr": "灵武市龙城华庭南门",
+        "asr_correct": "灵武市龙城华厅南门"
+    },
+    {
+        "manual": "小瑞我要导航",
+        "asr": "小瑞要导航",
+        "asr_correct": "小锐要导航"
+    },
+    {
+        "manual": "(side)(dialect)",
+        "asr": "第二个到塔季他这个道士观",
+        "asr_correct": "第二个到哈吉他这个道士观"
+    },
+    {
+        "manual": "我要去山亭",
+        "asr": "我要去善婷",
+        "asr_correct": "我要去山亭"
+    },
+    {
+        "manual": "导航到西沙路(unknown)",
+        "asr": "导航到西沙路七仙甜品献县",
+        "asr_correct": "导航到西杀戮七仙甜品献县"
+    },
+    {
+        "manual": "导航到南部嘴东码头嘴东(unknown)嘴东码头",
+        "asr": "导航到南部嘴东码头",
+        "asr_correct": "导航到南部最东码头"
+    },
+    {
+        "manual": "请您导航到西南营",
+        "asr": "请您导航到息耒茔",
+        "asr_correct": "请您导航道西耒茔"
+    },
+    {
+        "manual": "我要去",
+        "asr": "我一去",
+        "asr_correct": "我一圈"
+    },
+    {
+        "manual": "小菲你好",
+        "asr": "到北你好",
+        "asr_correct": "到被你好"
+    },
+    {
+        "manual": "导航到卓普",
+        "asr": "导航到卓坡",
+        "asr_correct": "导航到拙朴"
+    },
+    {
+        "manual": "上乌鲁木齐",
+        "asr": "上木鲁木齐",
+        "asr_correct": "汤姆鲁木齐"
+    },
+    {
+        "manual": "华邑酒店",
+        "asr": "华一酒店",
+        "asr_correct": "华谊酒店"
+    },
+    {
+        "manual": "导航到(unknown)",
+        "asr": "导航到打枣",
+        "asr_correct": "导航到打造"
+    },
+    {
+        "manual": "开导航去南沙路映映山红大酒店",
+        "asr": "开导航去南沙路英映山红大酒店",
+        "asr_correct": "开导航去南杀戮影映山红大酒店"
+    },
+    {
+        "manual": "凌途关闭导航拜拜",
+        "asr": "临浦关闭导航拜拜",
+        "asr_correct": "林铺关闭导航拜拜"
+    }
+]
