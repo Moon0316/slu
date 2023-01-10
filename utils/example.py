@@ -5,6 +5,17 @@ from utils.vocab import Vocab, LabelVocab
 from utils.word2vec import Word2vecUtils
 from utils.evaluator import Evaluator
 
+
+def utt_manual_preprocess(string):
+    utt = string
+    del_list = ['(side)', '(dialect)', '(unknown)', '(noise)', '(robot)']
+    for s in del_list:
+        utt = utt.replace(s, '')
+    if utt == '':
+        utt = 'null'
+    return utt
+
+
 class Example():
 
     @classmethod
@@ -15,21 +26,24 @@ class Example():
         cls.label_vocab = LabelVocab(root)
 
     @classmethod
-    def load_dataset(cls, data_path):
+    def load_dataset(cls, data_path, use_manual=False):
         dataset = json.load(open(data_path, 'r', encoding='utf-8'))
         examples = []
         for di, data in enumerate(dataset):
             for ui, utt in enumerate(data):
-                ex = cls(utt, f'{di}-{ui}') # 这里会调用Example的初始化函数
-                examples.append(ex) # 插入的是一个example object，它包含的参数见下面的__init__函数
+                ex = cls(utt, f'{di}-{ui}', use_manual)  # 这里会调用Example的初始化函数
+                examples.append(ex)  # 插入的是一个example object，它包含的参数见下面的__init__函数
         return examples
 
-    def __init__(self, ex: dict, did):
+    def __init__(self, ex: dict, did, use_manual=False):
         super(Example, self).__init__()
         self.ex = ex
         self.did = did  # 作为每个句子在数据集中独一无二的标签
 
-        self.utt = ex['asr_1best']
+        if use_manual:
+            self.utt = utt_manual_preprocess(ex['manual_transcript'])  # remove the 'unknown'
+        else:
+            self.utt = ex['asr_1best']
         self.slot = {}  # "act-slot": value
         for label in ex['semantic']:
             act_slot = f'{label[0]}-{label[1]}' # label[0]:act, label[1]:slot, label[2]:value

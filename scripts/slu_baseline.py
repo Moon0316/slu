@@ -27,6 +27,9 @@ dev_path = os.path.join(args.dataroot, 'development.json')
 Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path)
 train_dataset = Example.load_dataset(train_path)
 dev_dataset = Example.load_dataset(dev_path)
+if args.train_manual:
+    train_manual_dataset = Example.load_dataset(train_path, use_manual=True)
+    dev_manual_dataset = Example.load_dataset(dev_path, use_manual=True)
 print("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
 print("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(dev_dataset)))
 
@@ -55,10 +58,13 @@ def set_optimizer(model, args):
     return optimizer
 
 
-def decode(choice):
+def decode(choice, manual=False):
     assert choice in ['train', 'dev']
     model.eval()
-    dataset = train_dataset if choice == 'train' else dev_dataset
+    if manual:
+        dataset = train_manual_dataset if choice == 'train' else dev_manual_dataset
+    else:
+        dataset = train_dataset if choice == 'train' else dev_dataset
     predictions, labels = [], []
     total_loss, count = 0, 0
     with torch.no_grad():
@@ -121,7 +127,10 @@ if not args.testing:
         model.train()
         count = 0
         for j in range(0, nsamples, step_size):
-            cur_dataset = [train_dataset[k] for k in train_index[j: j + step_size]]
+            if args.train_manual and j % 2 == 0:
+                cur_dataset = [train_manual_dataset[k] for k in train_index[j: j + step_size]]
+            else:
+                cur_dataset = [train_dataset[k] for k in train_index[j: j + step_size]]
             current_batch = from_example_list(args, cur_dataset, device, train=True)
             output, loss = model(current_batch)
             epoch_loss += loss.item()
@@ -133,6 +142,13 @@ if not args.testing:
         logging.info('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count))
         torch.cuda.empty_cache()
         gc.collect()
+
+        if args.train_manual:
+            start_time = time.time()
+            metrics, dev_loss = decode('dev', manual=True)
+            dev_acc, dev_fscore = metrics['acc'], metrics['fscore']
+            print('Evaluation using Manual transcript: \tEpoch: %d\tTime: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, time.time() - start_time, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
+            logging.info('Evaluation using Manual transcript: \tEpoch: %d\tTime: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, time.time() - start_time, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
 
         start_time = time.time()
         metrics, dev_loss = decode('dev')

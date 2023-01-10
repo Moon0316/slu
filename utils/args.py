@@ -31,4 +31,5 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--step_size', default=10, type=int, help='step_size of learning rate scheduler')
     arg_parser.add_argument('--gamma', default=0.5, type=float, help='gamma of learning rate scheduler')
     arg_parser.add_argument('--name', default='debug', type=str, help='experiment name')
+    arg_parser.add_argument('--train_manual', default=False, action='store_true', help='train with manual_transcript')
     return arg_parser
