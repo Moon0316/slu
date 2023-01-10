@@ -10,7 +10,7 @@ def utt_manual_preprocess(string):
     utt = string
     del_list = ['(side)', '(dialect)', '(unknown)', '(noise)', '(robot)']
     for s in del_list:
-        utt = utt.replace(s, '')
+        utt = utt.replace(s, '[UNK]')
     if utt == '':
         utt = 'null'
     return utt
