@@ -25,6 +25,12 @@
 + `scripts/slu_baseline.py`:主程序脚本
 + `asrcor.py`:针对 train.json, 对语音识别结果于以修正
 
+#### run.sh使用说明
+为了快速进行实验、规范记录实验参数，可以运行run.sh脚本传入参数。
+例如`bash run.sh bert 0.00001 32 10 0.5 50 1`表示使用bert作为预训练模型，学习率为0.00001，batch_size为32，lr scheduler的step size为10、gamma为0.5，epoch数为50，gpuid为1。
+
+运行命令后，在`exp/bert_lr_0.00001_bs_32_step_10_gamma_0.5_ep_50/checkpoint`下面会保存最佳模型文件，在`exp/bert_lr_0.00001_bs_32_step_10_gamma_0.5_ep_50/config.json`中会保存实验配置，在`exp/bert_lr_0.00001_bs_32_step_10_gamma_0.5_ep_50/log.txt`中会保存训练日志
+
 ### 有关预训练语言模型
 已使用的预训练模型：
 + pycorrector: https://github.com/shibing624/pycorrector

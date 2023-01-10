@@ -1,6 +1,6 @@
 # coding=utf-8
 import sys, os, time, gc, json
-from torch.optim import Adam
+from torch.optim import Adam, lr_scheduler
 
 install_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(install_path)
@@ -10,7 +10,8 @@ from utils.initialization import *
 from utils.example import Example
 from utils.batch import from_example_list
 from utils.vocab import PAD
-from model.slu_baseline_tagging import SLUTagging
+from model.slu_baseline_tagging import SLUTagging, SLUBertTagging
+import logging
 
 # initialization params, output path, logger, random seed and torch.device
 args = init_args(sys.argv[1:])
@@ -34,9 +35,12 @@ args.pad_idx = Example.word_vocab[PAD]
 args.num_tags = Example.label_vocab.num_tags    # tag总数
 args.tag_pad_idx = Example.label_vocab.convert_tag_to_idx(PAD)
 
+if not args.pretrained_model:
+    model = SLUTagging(args).to(device)
+    Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
 
-model = SLUTagging(args).to(device)
-Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
+else:
+    model = SLUBertTagging(args).to(device)
 
 if args.testing:
     check_point = torch.load(open('model.bin', 'rb'), map_location=device)
@@ -101,8 +105,14 @@ if not args.testing:
     num_training_steps = ((len(train_dataset) + args.batch_size - 1) // args.batch_size) * args.max_epoch
     print('Total training steps: %d' % (num_training_steps))
     optimizer = set_optimizer(model, args)
+    scheduler = lr_scheduler.StepLR(optimizer, step_size=args.step_size, gamma=args.gamma)
     nsamples, best_result = len(train_dataset), {'dev_acc': 0., 'dev_f1': 0.}
     train_index, step_size = np.arange(nsamples), args.batch_size
+    if not os.path.exists(os.path.join('exp',args.name,'checkpoint')):
+        os.makedirs(os.path.join('exp',args.name,'checkpoint'),exist_ok=True)
+    with open(os.path.join('exp',args.name,'config.json'),'w') as f:
+        json.dump(args.__dict__, f, indent=4)
+    logging.basicConfig(filename=os.path.join('exp',args.name,'log.txt'), level=logging.INFO)
     print('Start training ......')
     for i in range(args.max_epoch):
         start_time = time.time()
@@ -120,6 +130,7 @@ if not args.testing:
             optimizer.zero_grad()
             count += 1
         print('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count))
+        logging.info('Training: \tEpoch: %d\tTime: %.4f\tTraining Loss: %.4f' % (i, time.time() - start_time, epoch_loss / count))
         torch.cuda.empty_cache()
         gc.collect()
 
@@ -127,15 +138,18 @@ if not args.testing:
         metrics, dev_loss = decode('dev')
         dev_acc, dev_fscore = metrics['acc'], metrics['fscore']
         print('Evaluation: \tEpoch: %d\tTime: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, time.time() - start_time, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
+        logging.info('Evaluation: \tEpoch: %d\tTime: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, time.time() - start_time, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
         if dev_acc > best_result['dev_acc']:
             best_result['dev_loss'], best_result['dev_acc'], best_result['dev_f1'], best_result['iter'] = dev_loss, dev_acc, dev_fscore, i
             torch.save({
                 'epoch': i, 'model': model.state_dict(),
                 'optim': optimizer.state_dict(),
-            }, open('model.bin', 'wb'))
+            }, open(os.path.join('exp', args.name, 'checkpoint','model.bin'), 'wb'))
             print('NEW BEST MODEL: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, dev_loss, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
-
+            logging.info('NEW BEST MODEL: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.2f\tDev fscore(p/r/f): (%.2f/%.2f/%.2f)' % (i, dev_loss, dev_acc, dev_fscore['precision'], dev_fscore['recall'], dev_fscore['fscore']))
+            
     print('FINAL BEST RESULT: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.4f\tDev fscore(p/r/f): (%.4f/%.4f/%.4f)' % (best_result['iter'], best_result['dev_loss'], best_result['dev_acc'], best_result['dev_f1']['precision'], best_result['dev_f1']['recall'], best_result['dev_f1']['fscore']))
+    logging.info('FINAL BEST RESULT: \tEpoch: %d\tDev loss: %.4f\tDev acc: %.4f\tDev fscore(p/r/f): (%.4f/%.4f/%.4f)' % (best_result['iter'], best_result['dev_loss'], best_result['dev_acc'], best_result['dev_f1']['precision'], best_result['dev_f1']['recall'], best_result['dev_f1']['fscore']))
 else:
     start_time = time.time()
     metrics, dev_loss = decode('dev')

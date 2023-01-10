@@ -1,7 +1,7 @@
 # coding=utf-8
 import os, json
-PAD = '<pad>'
-UNK = '<unk>'
+PAD = '[PAD]'
+UNK = '[UNK]'
 BOS = '<s>'
 EOS = '</s>'
 

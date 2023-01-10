@@ -1,14 +1,36 @@
 # coding=utf-8
 import torch
+from utils.vocab import PAD
 
+def process_utt_for_LM(utt):
+    '''
+        在处理中文语言模型的输入时，有几个注意点：
+        1. 中文的语言模型在输入大写英文字母时识别成[UNK]，需要把英文字母小写化
+        2. 连续的小写字母也可能识别出错，需要把字母用空格分开
+        3. 句子中可能包含了[PAD],[UNK]等token，需要保护这些token
+    '''
+    # 中文的语言模型在输入大写英文字母时识别成[UNK]，需要把
+    utt = utt.replace(' ', '[PAD]')  # 空格视为PAD
+    utt = utt.replace('[PAD]','@')  # 保护'[PAD]'
+    utt = utt.replace('[UNK]','#')  # 保护'[UNK]'
+    utt = ' '.join(list(utt.lower())) # 将英文转换成小写，然后加上空格
+    utt = utt.replace('@','[PAD]')  # 恢复'[PAD]'
+    utt = utt.replace('#','[UNK]')  # 恢复'[UNK]'
+    
+    return utt
 
 def from_example_list(args, ex_list, device='cpu', train=True):
     ex_list = sorted(ex_list, key=lambda x: len(x.input_idx), reverse=True)
     batch = Batch(ex_list, device)
     pad_idx = args.pad_idx
     tag_pad_idx = args.tag_pad_idx
-
     batch.utt = [ex.utt for ex in ex_list]
+     
+    if args.pretrained_model:
+        max_len = max([len(ex.utt) for ex in ex_list])
+        batch.lm_utt = [ex.utt + ''.join([PAD]*(max_len-len(ex.utt))) for ex in ex_list]
+        batch.lm_utt = [process_utt_for_LM(utt) for utt in batch.lm_utt]
+             
     input_lens = [len(ex.input_idx) for ex in ex_list]
     max_len = max(input_lens)
     input_ids = [ex.input_idx + [pad_idx] * (max_len - len(ex.input_idx)) for ex in ex_list]    # 把每个句子的wordid用0补成batch中最长句子的长度

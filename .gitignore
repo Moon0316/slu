@@ -1,4 +1,7 @@
 model/__pycache__/
 utils/__pycache__/
 tmp*
-model.bin
+*.bin
+exp/
+logs/
+.vscode/
