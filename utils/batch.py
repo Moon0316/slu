@@ -1,6 +1,7 @@
 # coding=utf-8
 import torch
 from utils.vocab import PAD
+import numpy as np
 
 def process_utt_for_LM(utt):
     '''
@@ -24,16 +25,29 @@ def from_example_list(args, ex_list, device='cpu', train=True):
     batch = Batch(ex_list, device)
     pad_idx = args.pad_idx
     tag_pad_idx = args.tag_pad_idx
-    batch.utt = [ex.utt for ex in ex_list]
+    
+    if args.pointer_mode:
+        batch.utt = ['[PAD]'+ex.utt for ex in ex_list]
+    else:
+        batch.utt = [ex.utt for ex in ex_list]
      
     if args.pretrained_model:
         max_len = max([len(ex.utt) for ex in ex_list])
         batch.lm_utt = [ex.utt + ''.join([PAD]*(max_len-len(ex.utt))) for ex in ex_list]
         batch.lm_utt = [process_utt_for_LM(utt) for utt in batch.lm_utt]
-             
-    input_lens = [len(ex.input_idx) for ex in ex_list]
+    
+    if args.pointer_mode:
+        input_lens = [len(ex.input_idx)+1 for ex in ex_list]
+    else:             
+        input_lens = [len(ex.input_idx) for ex in ex_list]
+    
     max_len = max(input_lens)
-    input_ids = [ex.input_idx + [pad_idx] * (max_len - len(ex.input_idx)) for ex in ex_list]    # 把每个句子的wordid用0补成batch中最长句子的长度
+    
+    if args.pointer_mode:
+        input_ids = [[pad_idx] + ex.input_idx + [pad_idx] * (max_len-1 - len(ex.input_idx)) for ex in ex_list]    # add extra token in the begining
+    else:
+        input_ids = [ex.input_idx + [pad_idx] * (max_len - len(ex.input_idx)) for ex in ex_list]    # 把每个句子的wordid用0补成batch中最长句子的长度
+    
     batch.input_ids = torch.tensor(input_ids, dtype=torch.long, device=device)
     batch.lengths = input_lens
     batch.did = [ex.did for ex in ex_list]
@@ -46,6 +60,10 @@ def from_example_list(args, ex_list, device='cpu', train=True):
         tag_mask = [[1] * len(ex.tag_id) + [0] * (max_tag_lens - len(ex.tag_id)) for ex in ex_list] # 设置mask，在模型前向传播的时候为0的位置不参与计算
         batch.tag_ids = torch.tensor(tag_ids, dtype=torch.long, device=device)
         batch.tag_mask = torch.tensor(tag_mask, dtype=torch.float, device=device)
+        slot_begin = [ex.slot_begin for ex in ex_list]
+        slot_end = [ex.slot_end for ex in ex_list]
+        batch.slot_begin = torch.tensor(slot_begin, dtype=torch.long, device=device)
+        batch.slot_end = torch.tensor(slot_end, dtype=torch.long, device=device)
     else:
         batch.labels = None
         batch.tag_ids = None

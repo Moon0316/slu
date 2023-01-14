@@ -79,3 +79,30 @@ class LabelVocab():
     @property
     def num_tags(self):
         return len(self.tag2idx)
+
+class SlotVocab():
+    
+    def __init__(self, root):
+        self.tag2idx, self.idx2tag = {}, {}
+        self.from_filepath(root)
+
+    def from_filepath(self, root):
+        ontology = json.load(open(os.path.join(root, 'ontology.json'), 'r', encoding='utf-8'))
+        acts = ontology['acts']
+        slots = ontology['slots']
+
+        for act in acts:
+            for slot in slots:
+                idx = len(self.tag2idx)
+                tag = f'{act}-{slot}'  # 遍历所有可能的act，slot标签
+                self.tag2idx[tag], self.idx2tag[idx] = idx, tag
+
+    def convert_tag_to_idx(self, tag):
+        return self.tag2idx[tag]
+
+    def convert_idx_to_tag(self, idx):
+        return self.idx2tag[idx]
+
+    @property
+    def num_tags(self):
+        return len(self.tag2idx)
