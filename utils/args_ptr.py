@@ -19,14 +19,15 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--testing', action='store_true', help='training or evaluation mode')
     #### Training Hyperparams ####
     arg_parser.add_argument('--batch_size', default=32, type=int, help='Batch size')
-    arg_parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
+    arg_parser.add_argument('--lr', type=float, default=1e-4, help='learning rate')
     arg_parser.add_argument('--max_epoch', type=int, default=100, help='terminate after maximum epochs')
     #### Common Encoder Hyperparams ####
-    arg_parser.add_argument('--encoder_cell', default='LSTM', choices=['LSTM', 'GRU', 'RNN'], help='root of data')
+    arg_parser.add_argument('--encoder_cell', default='LSTM', choices=['LSTM', 'GRU', 'RNN'], help='use for encoder and decoder')
     arg_parser.add_argument('--dropout', type=float, default=0.2, help='feature dropout rate')
     arg_parser.add_argument('--embed_size', default=768, type=int, help='Size of word embeddings')  # 表示word2vec时vec的维度
     arg_parser.add_argument('--num_layer', default=2, type=int, help='number of layer')
-    arg_parser.add_argument('--pretrained_model', default=None, type=str, help='use which pretrained model for embedding, use word2vec if None')
+    #### Our group's improvements ####
+    arg_parser.add_argument('--pretrained_model', default=None, type=str, help='use which pretrained model for embedding, support bert|bertw|roberta|macbert,use word2vec if None')
     arg_parser.add_argument('--step_size', default=10, type=int, help='step_size of learning rate scheduler')
     arg_parser.add_argument('--gamma', default=0.5, type=float, help='gamma of learning rate scheduler')
     arg_parser.add_argument('--name', default='debug', type=str, help='experiment name')
@@ -35,4 +36,5 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--ptr_size', default=128, type=int, help='pointer network hidden size')
     arg_parser.add_argument('--pointer_mode', default=True, type=bool, help='pointer mode,add extra token in utterance')
     arg_parser.add_argument('--negative_weight', default=0.02, type=float, help='loss weight of negative sample')
+    arg_parser.add_argument('--do_correction', action='store_true', help='fine tune the output accoording to ontology')
     return arg_parser

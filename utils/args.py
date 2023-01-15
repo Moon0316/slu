@@ -27,7 +27,8 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--embed_size', default=768, type=int, help='Size of word embeddings')  # 表示word2vec时vec的维度
     arg_parser.add_argument('--hidden_size', default=512, type=int, help='hidden size')
     arg_parser.add_argument('--num_layer', default=2, type=int, help='number of layer')
-    arg_parser.add_argument('--pretrained_model', default=None, type=str, help='use which pretrained model for embedding, use word2vec if None')
+    #### Our group's improvements ####
+    arg_parser.add_argument('--pretrained_model', default=None, type=str, help='use which pretrained model for embedding, support bert|bertw|roberta|macbert,use word2vec if None')
     arg_parser.add_argument('--step_size', default=10, type=int, help='step_size of learning rate scheduler')
     arg_parser.add_argument('--gamma', default=0.5, type=float, help='gamma of learning rate scheduler')
     arg_parser.add_argument('--name', default='debug', type=str, help='experiment name')

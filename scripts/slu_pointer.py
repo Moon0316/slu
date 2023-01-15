@@ -10,7 +10,8 @@ from utils.initialization import *
 from utils.example import Example
 from utils.batch import from_example_list
 from utils.vocab import PAD
-from model.slu_pointer_net import SLUPointer, SLUBertPointer
+from utils.correction import correct
+from model.slu_pointer_net import SLUPointer
 import logging
 
 # initialization params, output path, logger, random seed and torch.device
@@ -43,12 +44,13 @@ if not args.pretrained_model:
     Example.word2vec.load_embeddings(model.word_embed, Example.word_vocab, device=device)
 
 else:
-    model = SLUBertPointer(args).to(device)
+    raise NotImplementedError
 
 if args.testing:
-    check_point = torch.load(open('model.bin', 'rb'), map_location=device)
+    model_path = os.path.join('exp', args.name, 'checkpoint', 'model.bin')
+    check_point = torch.load(open(model_path, 'rb'), map_location=device)
     model.load_state_dict(check_point['model'])
-    print("Load saved model from root path")
+    print("Load saved model from {}".format(model_path))
 
 
 def set_optimizer(model, args):
@@ -72,6 +74,8 @@ def decode(choice, manual=False):
             cur_dataset = dataset[i: i + args.batch_size]
             current_batch = from_example_list(args, cur_dataset, device, train=True)
             pred, label, loss = model.decode(current_batch)
+            if args.do_correction:
+                pred = [correct(p, Example.label_vocab) for p in pred ]
             for j in range(len(current_batch)):
                 if any([l.split('-')[-1] not in current_batch.utt[j] for l in pred[j]]):
                     print(current_batch.utt[j], pred[j], label[j])
@@ -94,7 +98,9 @@ def predict():
         for i in range(0, len(test_dataset), args.batch_size):
             cur_dataset = test_dataset[i: i + args.batch_size]
             current_batch = from_example_list(args, cur_dataset, device, train=False)
-            pred = model.decode(Example.label_vocab, current_batch)
+            pred = model.decode(current_batch)
+            if args.do_correction:
+                pred = [correct(p, Example.label_vocab) for p in pred ]
             for pi, p in enumerate(pred):
                 did = current_batch.did[pi]
                 predictions[did] = p

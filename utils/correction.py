@@ -44,8 +44,8 @@ def correct(pred, label_vocab):
                 if best_dis * 2 < len(val):
                     new_pred.append('-'.join([act, sl, new_val]))
                 else:   # 假如最佳匹配也相差过多，直接舍去这一项/保留原来的值
-                    new_pred.append(slot_value)
-                    # pass
+                    new_pred.append(slot_value)   # 保留原来的值
+                    # pass    # 舍去这一项
     return new_pred
 
 
@@ -53,4 +53,3 @@ if __name__ == '__main__':
     Example.configuration('../data', train_path='../data\\train.json', word2vec_path='../word2vec-768.txt')
     pred_tuple = ['inform-操作-导航', 'inform-终点名称-哈尔滨医科大学附属']
     pred_tuple = correct(pred_tuple, Example.label_vocab)
-    print()

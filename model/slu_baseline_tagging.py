@@ -3,7 +3,6 @@ import torch
 import torch.nn as nn
 import torch.nn.utils.rnn as rnn_utils
 from transformers import AutoTokenizer, BertModel
-from utils import correction
 
 
 class SLUTagging(nn.Module):
@@ -32,7 +31,7 @@ class SLUTagging(nn.Module):
 
         return tag_output
 
-    def decode(self, label_vocab, batch, do_correction=False):
+    def decode(self, label_vocab, batch):
         batch_size = len(batch)
         labels = batch.labels
         output = self.forward(batch)
@@ -61,8 +60,6 @@ class SLUTagging(nn.Module):
                 slot = '-'.join(tag_buff[0].split('-')[1:])
                 value = ''.join([batch.utt[i][j] for j in idx_buff])
                 pred_tuple.append(f'{slot}-{value}')
-            if do_correction:
-                pred_tuple = correction.correct(pred_tuple, label_vocab)
             predictions.append(pred_tuple)
         if len(output) == 1:    # test，没有label，因此没有loss
             return predictions
