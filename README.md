@@ -12,6 +12,10 @@
 
     python scripts/slu_baseline.py
 
+### 最优模型下载链接
+
+    https://jbox.sjtu.edu.cn/l/N1wdC4	(1.2G)
+
 ### 代码说明
 
 + `utils/args.py`:定义了所有涉及到的可选参数，如需改动某一参数可以在运行的时候将命令修改成
