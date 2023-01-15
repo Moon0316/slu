@@ -33,4 +33,5 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--name', default='debug', type=str, help='experiment name')
     arg_parser.add_argument('--train_manual', action='store_true', help='train with manual_transcript and asr')
     arg_parser.add_argument('--pointer_mode', default=False, type=bool, help='pointer mode,add extra token in utterance')
+    arg_parser.add_argument('--do_correction', action='store_true', help='fine tune the output accoording to ontology')
     return arg_parser

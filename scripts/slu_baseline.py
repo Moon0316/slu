@@ -71,10 +71,10 @@ def decode(choice, manual=False):
         for i in range(0, len(dataset), args.batch_size):
             cur_dataset = dataset[i: i + args.batch_size]
             current_batch = from_example_list(args, cur_dataset, device, train=True)
-            pred, label, loss = model.decode(Example.label_vocab, current_batch)
-            for j in range(len(current_batch)):
-                if any([l.split('-')[-1] not in current_batch.utt[j] for l in pred[j]]):
-                    print(current_batch.utt[j], pred[j], label[j])
+            pred, label, loss = model.decode(Example.label_vocab, current_batch, args.do_correction)
+            # for j in range(len(current_batch)):
+            #     if any([l.split('-')[-1] not in current_batch.utt[j] for l in pred[j]]):
+            #         print(current_batch.utt[j], pred[j], label[j])
             predictions.extend(pred)
             labels.extend(label)
             total_loss += loss
@@ -94,7 +94,7 @@ def predict():
         for i in range(0, len(test_dataset), args.batch_size):
             cur_dataset = test_dataset[i: i + args.batch_size]
             current_batch = from_example_list(args, cur_dataset, device, train=False)
-            pred = model.decode(Example.label_vocab, current_batch)
+            pred = model.decode(Example.label_vocab, current_batch, args.do_correction)
             for pi, p in enumerate(pred):
                 did = current_batch.did[pi]
                 predictions[did] = p

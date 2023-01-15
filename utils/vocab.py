@@ -56,12 +56,12 @@ class LabelVocab():
         self.idx2tag[0] = PAD
         self.tag2idx['O'] = 1
         self.idx2tag[1] = 'O'
+        self.ontology = json.load(open(os.path.join(root, 'ontology.json'), 'r', encoding='utf-8'))
         self.from_filepath(root)
 
     def from_filepath(self, root):
-        ontology = json.load(open(os.path.join(root, 'ontology.json'), 'r', encoding='utf-8'))
-        acts = ontology['acts']
-        slots = ontology['slots']
+        acts = self.ontology['acts']
+        slots = self.ontology['slots']
 
         for act in acts:
             for slot in slots:
